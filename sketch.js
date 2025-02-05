@@ -60,7 +60,6 @@ function preload() {
       icon_imgs[icon_imgs.length-1].push(loadImage("Wed"+ic+abc[i]+".png"));
     }
   }
-  
 }
 
 function setup() {
@@ -71,7 +70,6 @@ function setup() {
   back = color('#FFECD6aa');
   frontalpha = color('#4D3D2E');
   createCanvas(windowWidth, windowHeight);
-  
   px = min(windowWidth/6,windowHeight/10)
   imageMode(CENTER);
   textAlign(CENTER,TOP);
@@ -94,7 +92,6 @@ function setup() {
     icons.push(new icon(ic,[[icon_x,px*-3.5],[0,px*-2]]));
     icon_x += icon_jump;
   }
-  
 }
 
 function draw() {
@@ -175,7 +172,6 @@ function draw() {
     textUpTo(info_text,0,px*-0.8,px*0.45,width*0.9);
     textUpTo(detail_text,0,px*1.5,px*0.3,width*0.9);
   }
-  
 }
 
 
