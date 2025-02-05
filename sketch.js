@@ -127,7 +127,7 @@ function draw() {
   
   randPaper[3] += 1;
   if (randPaper[3] >= fr*1.5){
-    randPaper = [random()*TWO_PI,random()*50-25,random()*50-25,0];
+    randPaper = [random()*0.1-0.05+PI*int(random()*4),random()*50-25,random()*50-25,0];
     for (l of letters){
       l.rerandom();
     }
