@@ -16,6 +16,7 @@ var detail_text = '';
 var info_index = -1;
 var clicked = -1;
 var fr = 30;
+var img_dim;
 var clicked_tick = -90;
 var curr_alpha = 0;
 var trans = 10;
@@ -71,6 +72,7 @@ function setup() {
   frontalpha = color('#4D3D2E');
   createCanvas(windowWidth, windowHeight);
   px = min(windowWidth/6,windowHeight/10)
+  img_dim = [2*min(windowWidth,windowHeight),1.5*min(windowWidth,windowHeight)];
   imageMode(CENTER);
   textAlign(CENTER,TOP);
   letters.push(new letterI(1,[[px*-1.5,px*-1],[0,px*-1],[px*-1.9,px*3.5]]));
@@ -127,7 +129,7 @@ function draw() {
   
   randPaper[3] += 1;
   if (randPaper[3] >= fr*1.5){
-    randPaper = [random()*0.1-0.05+PI*int(random()*4),random()*50-25,random()*50-25,0];
+    randPaper = [random()*TWO_PI,random()*50-25,random()*50-25,0];
     for (l of letters){
       l.rerandom();
     }
@@ -152,7 +154,7 @@ function draw() {
   
   translate(width/2,height/2);
   rotate(randPaper[0]);
-  image (paper, randPaper[1], randPaper[2], 2400,1800);
+  image (paper, randPaper[1], randPaper[2], img_dim[0],img_dim[1]);
   rotate(-randPaper[0]);
   background(back);
   
