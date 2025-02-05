@@ -42,7 +42,7 @@ var detail_info = [
 ];
                  
 function preload() {
-  
+  /*
   //maryKate = loadFont("MaryKate.ttf");
   //reenieBeanie = loadFont("ReenieBeanie-Regular.ttf");
   caveat = loadFont("Caveat-VariableFont_wght.ttf");
@@ -60,16 +60,18 @@ function preload() {
       icon_imgs[icon_imgs.length-1].push(loadImage("Wed"+ic+abc[i]+".png"));
     }
   }
+  */
 }
 
 function setup() {
   
   frameRate(30);
-  textFont(caveat);
+  //textFont(caveat);
   front = color('#4D3D2E');
   back = color('#FFECD6aa');
   frontalpha = color('#4D3D2E');
   createCanvas(windowWidth, windowHeight);
+  /*
   px = min(windowWidth/6,windowHeight/10)
   imageMode(CENTER);
   textAlign(CENTER,TOP);
@@ -92,10 +94,14 @@ function setup() {
     icons.push(new icon(ic,[[icon_x,px*-3.5],[0,px*-2]]));
     icon_x += icon_jump;
   }
+  */
 }
 
 function draw() {
-  
+  background(0);
+  fill(255);
+  circle(width/2,height/2,100);
+  /*
   if(clicked == -1){
     if(target_ticker == 0){
       frontalpha.setAlpha(255*randPaper[3]/(fr*1.5));
@@ -172,6 +178,7 @@ function draw() {
     textUpTo(info_text,0,px*-0.8,px*0.45,width*0.9);
     textUpTo(detail_text,0,px*1.5,px*0.3,width*0.9);
   }
+  */
 }
 
 
