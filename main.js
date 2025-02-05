@@ -1,9 +1,9 @@
 
                  
-function preload() {
+//function preload() {
   //caveat = loadFont("Caveat-VariableFont_wght.ttf");
 
-}
+//}
 
 function setup() {
   
