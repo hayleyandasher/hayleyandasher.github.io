@@ -86,7 +86,7 @@ function setup() {
   letters.push(new letterI(4,[[px*0.6,px*1],[px*0.9,px*1],[px*1.7,px*3.5]]));
   letters.push(new letterI(7,[[px*1.2,px*1],[px*1.2,px*-1],[px*2,px*3.5]]));
   
-  icon_jump = max(px*3,width/(icon_gen.length-2));
+  icon_jump = max(px*3,width/(icon_gen.length-1));
   icon_x = width/2 + icon_jump;
   for (var ic = 0; ic < icon_gen.length; ic++){
     icons.push(new icon(ic,[[icon_x,px*-3.5],[0,px*-2]]));
