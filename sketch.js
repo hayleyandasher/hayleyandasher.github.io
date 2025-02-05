@@ -72,7 +72,7 @@ function setup() {
   frontalpha = color('#4D3D2E');
   createCanvas(windowWidth, windowHeight);
   px = min(windowWidth/6,windowHeight/10)
-  img_dim = [2*min(windowWidth,windowHeight),1.5*min(windowWidth,windowHeight)];
+  img_dim = [2.8*max(windowWidth,windowHeight),2.1*max(windowWidth,windowHeight)];
   imageMode(CENTER);
   textAlign(CENTER,TOP);
   letters.push(new letterI(1,[[px*-1.5,px*-1],[0,px*-1],[px*-1.9,px*3.5]]));
