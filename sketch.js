@@ -32,7 +32,7 @@ var icon_info = [
   "blockhouse\n1988 nw 18th ave\nportland or 97209",
   "the celebration will be formal.\nhowever, we discourage purchasing\nnew items, so please wear\nsomething you already have",
   "we kindly request no presents,\nbut we will have more\ndetails to come for those\nwho love gift giving ",
-  "click here to rsvp by emailing\nhayleyandasher@gmail.com"
+  "click here to rsvp by emailing\nhayleyandasher@gmail.com\n\nages 12+"
 ];
 var detail_info = [
   "",
